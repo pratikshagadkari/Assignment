@@ -3,11 +3,11 @@ var connection = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
   password : 'root',
-  database : 'dell'
+  database : 'data'
 });
 connection.connect();
 
-connection.query('SELECT * FROM dell.login', function(err, rows, fields)
+connection.query('INSERT INTO data VALUES', function(err, rows, fields)
 {
   if (err) throw err;
 
